@@ -1,0 +1,23 @@
+.column {
+    float: left;
+    width: 33%;
+  }
+  .column2 {
+    float: left;
+    width: 66%;
+  }
+  .column3 {
+    float: left;
+    width: 33%;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  hr{
+    padding-left: 25px;
+    padding-right: 25px;
+  }
