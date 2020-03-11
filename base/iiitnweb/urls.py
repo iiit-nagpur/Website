@@ -1,10 +1,10 @@
-from django.urls import path
+from django.conf.urls import url
 
 from . import views
 
 urlpatterns = [
-		path('', views.home, name='home'),
-        path('', views.Admission.admission, name='admission'),
-        path('', views.Admission.undergraduate, name='admission'),
+		url('', views.home, name='home'),
+        url('', views.Admission.admission, name='admission'),
+        url('', views.Admission.undergraduate, name='admission'),
 ]
 
