@@ -1,5 +1,6 @@
 
 <!DOCTYPE html>
+{% load staticfiles %}
 <html lang="en">
   <head>
 
@@ -8,7 +9,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href={% static "/css/footer.css" %}>
 
 
 
@@ -48,7 +49,7 @@
     </div>
     <div>
       <div>
-      <img src="logo.png" style="height: 120px; width: 140px; padding-left: 40px; text-align: right; padding-top: 10px; padding-bottom: 10px;">Indian Institute of Information Technology, Nagpur
+      <img src={% static "logo.png" %} style="height: 120px; width: 140px; padding-left: 40px; text-align: right; padding-top: 10px; padding-bottom: 10px;">Indian Institute of Information Technology, Nagpur
       </div> 
 
 
