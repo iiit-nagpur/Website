@@ -43,7 +43,7 @@ class Home(TemplateView):
 			'title': obj.head,
 			'description': obj.content
 		}
-		return render(request, 'About/about.html', context)
+		return render(request, 'Home/about.html', context)
 
 	def Mission(request):
 		return render(request, 'mission.html')
