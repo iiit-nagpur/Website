@@ -98,22 +98,22 @@ class People(TemplateView):
 
 class Academics(TemplateView):
 	def Rulebook(request):
-		return render(request, 'rulebook.html')
+		return render(request, 'Academics/rulebook.html')
 
 	def Departments(request):
-		return render(request, 'departments.html')
+		return render(request, 'Academics/departments.html')
 
 	def Programmes(request):
-		return render(request, 'programs.html')
+		return render(request, 'Academics/programs.html')
 
 	def Convocation(request):
-		return render(request, 'convocation.html')
+		return render(request, 'Academics/convocation.html')
 
 	def Resources(request):
-		return render(request, 'resources.html')
+		return render(request, 'Academics/resources.html')
 
 	def StudentVerification(request):
-		return render(request, 'verification.html')
+		return render(request, 'Academics/verification.html')
 
 class Research(TemplateView):
 	def Publications(request):
