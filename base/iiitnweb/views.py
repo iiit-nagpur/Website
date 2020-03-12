@@ -46,55 +46,55 @@ class Home(TemplateView):
 		return render(request, 'Home/about.html', context)
 
 	def Mission(request):
-		return render(request, 'mission.html')
+		return render(request, 'Home/mission.html')
 
 	def Act(request):
-		return rende(request, 'act.html')
+		return render(request, 'Home/act.html')
 
 	def UpcomingCampus(request):
-		return render(request , 'upcomingcampus.html')
+		return render(request , 'Home/upcomingcampus.html')
 
 
 class Admission(TemplateView):
 	def Undergraduate(request):
-		return render(request, 'undergraduate.html')
+		return render(request, 'Admission/undergraduate.html')
 
 	def Postgraduate(request):
-		return render(request, 'postgraduate.html')
+		return render(request, 'Admission/postgraduate.html')
 
 	def PhD(request):
-		return render(request, 'phd.html')
+		return render(request, 'Admission/phd.html')
 
 	def Fees(request):
-		return render(request, 'fess.html')
+		return render(request, 'Admission/fess.html')
 
 	def FinancialAssistance(request):
-		return render(request, 'financial.html')
+		return render(request, 'Admission/financial.html')
 
 	def Questions(request):
-		return render(request, 'questions.html')
+		return render(request, 'Admission/questions.html')
 
 class People(TemplateView):
 	def Faculty(request):
-		return render(request, 'faculty.html')
+		return render(request, 'People/faculty.html')
 
 	def AdjunctFaculty(request):
-		return render(request, 'adjuctfaculty.html')
+		return render(request, 'People/adjuctfaculty.html')
 
 	def Staff(request):
-		return render(request, 'staff.html')
+		return render(request, 'People/staff.html')
 
 	def Btech(request):
-		return render(request, 'btech.html')
+		return render(request, 'People/btech.html')
 
 	def Mtech(request):
-		return render(request, 'mtech.html')
+		return render(request, 'People/mtech.html')
 
 	def Phd(request):
-		return render(request, 'phd.html')
+		return render(request, 'People/phd.html')
 
 	def Alumni(request):
-		return render(request, 'alumni.html')
+		return render(request, 'People/alumni.html')
 
 class Academics(TemplateView):
 	def Rulebook(request):
