@@ -10,6 +10,7 @@ from django.views.decorators.csrf import csrf_exempt
 from django.conf import settings
 from django.http import JsonResponse, HttpResponseRedirect
 import json
+from .models import About
 
 '''
 To do
@@ -27,140 +28,152 @@ def home(request):
 def contact(request):
 	return render(request, 'contacts.html')
 
+# def Abouts(request):
+# 	obj=About.objects.get(id=1)
+# 	context={
+# 		'laud': obj.head,
+# 		'pol': obj.content
+# 	}
+# 	return render(request, 'about.html', context)
 
 class Home(TemplateView):
-	def About(self,request):
-		return render(request, 'about.html')
+	def Abouts(request):
+		obj=About.objects.get(id=1)
+		context={
+			'title': obj.head,
+			'description': obj.content
+		}
+		return render(request, 'About/about.html', context)
 
-	def Mission(self,request):
+	def Mission(request):
 		return render(request, 'mission.html')
 
-	def Act(self,request):
+	def Act(request):
 		return rende(request, 'act.html')
 
-	def UpcomingCampus(self,request):
+	def UpcomingCampus(request):
 		return render(request , 'upcomingcampus.html')
 
 
 class Admission(TemplateView):
-	def Undergraduate(self, request):
+	def Undergraduate(request):
 		return render(request, 'undergraduate.html')
 
-	def Postgraduate(self, request):
+	def Postgraduate(request):
 		return render(request, 'postgraduate.html')
 
-	def PhD(self,request):
+	def PhD(request):
 		return render(request, 'phd.html')
 
-	def Fees(self,request):
+	def Fees(request):
 		return render(request, 'fess.html')
 
-	def FinancialAssistance(self,request):
+	def FinancialAssistance(request):
 		return render(request, 'financial.html')
 
-	def Questions(self,request):
+	def Questions(request):
 		return render(request, 'questions.html')
 
 class People(TemplateView):
-	def Faculty(self,request):
+	def Faculty(request):
 		return render(request, 'faculty.html')
 
-	def AdjunctFaculty(self,request):
+	def AdjunctFaculty(request):
 		return render(request, 'adjuctfaculty.html')
 
-	def Staff(self,request):
+	def Staff(request):
 		return render(request, 'staff.html')
 
-	def Btech(self,request):
+	def Btech(request):
 		return render(request, 'btech.html')
 
-	def Mtech(self,request):
+	def Mtech(request):
 		return render(request, 'mtech.html')
 
-	def Phd(self,request):
+	def Phd(request):
 		return render(request, 'phd.html')
 
-	def Alumni(self,request):
+	def Alumni(request):
 		return render(request, 'alumni.html')
 
 class Academics(TemplateView):
-	def Rulebook(self,request):
+	def Rulebook(request):
 		return render(request, 'rulebook.html')
 
-	def Departments(self,request):
+	def Departments(request):
 		return render(request, 'departments.html')
 
-	def Programmes(self,request):
+	def Programmes(request):
 		return render(request, 'programs.html')
 
-	def Convocation(self,request):
+	def Convocation(request):
 		return render(request, 'convocation.html')
 
-	def Resources(self,request):
+	def Resources(request):
 		return render(request, 'resources.html')
 
-	def StudentVerification(self,request):
+	def StudentVerification(request):
 		return render(request, 'verification.html')
 
 class Research(TemplateView):
-	def Publications(self,request):
+	def Publications(request):
 		return render(request, 'publications.html')
 
-	def ResearchAreas(self,request):
+	def ResearchAreas(request):
 		return render(request, 'research.html')
 
-	def Events(self,request):
+	def Events(request):
 		return render(request, 'events.html')
 
-	def FellowshipAwards(self,request):
+	def FellowshipAwards(request):
 		return render(request, 'awards.html')
 
 class Placement(TemplateView):
-	def Message(self,request):
+	def Message(request):
 		return render(request, 'message.html')
 
-	def WhyRecruit(self,request):
+	def WhyRecruit(request):
 		return render(request, 'whyrecruit.html')
 
-	def Procedure(self,request):
+	def Procedure(request):
 		return render(request, 'procedure.html')
 
-	def Statistics(self,request):
+	def Statistics(request):
 		return render(request, 'statistics.html')
 
-	def Internships(self,request):
+	def Internships(request):
 		return render(request, 'internships.html')
 
-	def Recruiters(self,request):
+	def Recruiters(request):
 		return render(request, 'recruiters.html')
 
-	def Startups(self,request):
+	def Startups(request):
 		return render(request, 'startups.html')
 
-	def ContactTnP(self,request):
+	def ContactTnP(request):
 		return render(request, 'contacttnp.html')
 
 class Careers(TemplateView):
-	def FacultyRecruitment(self,request):
+	def FacultyRecruitment(request):
 		return render(request, 'facrecruit.html')
 
-	def StaffRecruitment(self,request):
+	def StaffRecruitment(request):
 		return render(request, 'staffrecruit.html')
 
 class StudentAffairs(TemplateView):
-	def EventsNews(self,request):
+	def EventsNews(request):
 		return render(request, 'events.html')
 
-	def Facilities(self,request):
+	def Facilities(request):
 		return render(request, 'facilities.html')
 
-	def Hostels(self,request):
+	def Hostels(request):
 		return render(request, 'hostels.html')
 
-	def StudentClubs(self,request):
+	def StudentClubs(request):
 		return render(request, 'studentclubs.html')
 
-	def DisciplineGrievance(self,request):
+	def DisciplineGrievance(request):
 		return render(request, 'grievance.html')
 
 
@@ -169,7 +182,7 @@ class StudentAffairs(TemplateView):
 
 
 
-	# def get_context_data(self, *args, **kwargs):
+	# def get_context_data(*args, **kwargs):
 	# 	context = super(Admissions,self).get_context_data(*args,**kwargs)
 	# 	context['user_active']=False
 	# 	if self.request.user.is_active:
