@@ -39,7 +39,7 @@
     <ul class="dropdown-menu">
       <li><a href="{% url 'about' %}">About</a></li>
       <li><a href="#">Mission</a></li>
-      <li><a href="#">Act</a></li>
+      <li><a href={% static "/act.pdf" %} target="_blank">Act</a></li>
       <li><a href="#">Upcoming Campus</a></li>
     </ul>
   </li>
@@ -60,7 +60,7 @@
     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Academics
     <span class="caret"></span></a>
     <ul class="dropdown-menu">
-      <li><a href={% static "/rulebook.pdf" %}>Rulebook</a></li>
+      <li><a href={% static "/rulebook.pdf" %} target="_blank">Rulebook</a></li>
       <li><a href="#">Departments</a></li>
       <li><a href="#">Programmes</a></li>
       <li><a href="#">Convocation</a></li>
@@ -133,5 +133,5 @@
 {% endblock %}
 
 {% block footer %}
-  
+
 {% endblock %}
