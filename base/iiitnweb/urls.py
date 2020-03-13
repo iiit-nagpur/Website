@@ -22,7 +22,6 @@ urlpatterns = [
 		path('', views.People.Mtech, name='faculty'),
 		path('', views.People.Phd, name='phdpeople'),
 		path('', views.People.Alumni, name='alumni'),
-		path('', views.Academics.Rulebook, name='rulebook'),
 		path('', views.Academics.Departments, name='departments'),
 		path('', views.Academics.Programmes, name='program'),
 		path('', views.Academics.Convocation, name='convocation'),
