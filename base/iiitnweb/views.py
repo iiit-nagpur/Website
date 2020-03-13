@@ -10,7 +10,7 @@ from django.views.decorators.csrf import csrf_exempt
 from django.conf import settings
 from django.http import JsonResponse, HttpResponseRedirect
 import json
-from .models import About
+from .models import About,Faculty
 
 '''
 To do
@@ -76,7 +76,8 @@ class Admission(TemplateView):
 
 class People(TemplateView):
 	def Faculty(request):
-		return render(request, 'People/faculty.html')
+		object=Faculty.objects.all()
+		return render(request, 'People/faculty.html',{'facdata':object})
 
 	def AdjunctFaculty(request):
 		return render(request, 'People/adjuctfaculty.html')
@@ -97,8 +98,6 @@ class People(TemplateView):
 		return render(request, 'People/alumni.html')
 
 class Academics(TemplateView):
-	def Rulebook(request):
-		return render(request, 'Academics/rulebook.html')
 
 	def Departments(request):
 		return render(request, 'Academics/departments.html')
