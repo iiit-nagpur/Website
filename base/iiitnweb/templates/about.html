@@ -6,6 +6,10 @@
 
 <h1>{{ title }}</h1>
 <br>
-<p>{{ description|linebreaksbr }}</p>
+<pre>{{ description|linebreaksbr }}</pre>
 
+{% endblock %}
+
+{% block footer %}
+  {% include 'footer.html' %}
 {% endblock %}
