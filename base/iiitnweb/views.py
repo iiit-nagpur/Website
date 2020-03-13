@@ -98,8 +98,6 @@ class People(TemplateView):
 		return render(request, 'People/alumni.html')
 
 class Academics(TemplateView):
-	def Rulebook(request):
-		return render(request, 'Academics/rulebook.html')
 
 	def Departments(request):
 		return render(request, 'Academics/departments.html')
