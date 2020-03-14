@@ -18,7 +18,7 @@
 </div>
 <div>
   <div>
-  <img src={% static "logo.png" %} style="height: 120px; width: 140px; padding-left: 40px; text-align: right; padding-top: 10px; padding-bottom: 10px;">
+  <img src={% static "images/logo.png" %} style="height: 120px; width: 140px; padding-left: 40px; text-align: right; padding-top: 10px; padding-bottom: 10px;">
   <b>Indian Institute of Information Technology, Nagpur</b>
   </div>
 
@@ -39,7 +39,7 @@
     <ul class="dropdown-menu">
       <li><a href="{% url 'about' %}">About</a></li>
       <li><a href="#">Mission</a></li>
-      <li><a href="#">Act</a></li>
+      <li><a href={% static "assets/act.pdf" %} target="_blank">Act</a></li>
       <li><a href="#">Upcoming Campus</a></li>
     </ul>
   </li>
@@ -47,20 +47,18 @@
     <a class="dropdown-toggle" data-toggle="dropdown" href="#">People
     <span class="caret"></span></a>
     <ul class="dropdown-menu">
-      <li><a href="#">Faculty</a></li>
-      <li><a href="#">Adjunct Faculty</a></li>
-      <li><a href="#">Staff</a></li>
-      <li><a href="#">B Tech.</a></li>
-      <li><a href="#">M Tech.</a></li>
-      <li><a href="#">PhD</a></li>
-      <li><a href="#">Alumni</a></li>
+      <li><a href="{% url 'facult' %}">Faculty</a></li>
+      <li><a href="{% url 'adjunctfac' %}">Adjunct Faculty</a></li>
+      <li><a href="{% url 'staf' %}">Staff</a></li>
+      <li><a href="{% url 'stud' %}">Student</a></li>
+      <li><a href="{% url 'alumn' %}">Alumni</a></li>
     </ul>
   </li>
   <li class="dropdown">
     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Academics
     <span class="caret"></span></a>
     <ul class="dropdown-menu">
-      <li><a href={% static "/rulebook.pdf" %}>Rulebook</a></li>
+      <li><a href={% static "assets/rulebook.pdf" %} target="_blank">Rulebook</a></li>
       <li><a href="#">Departments</a></li>
       <li><a href="#">Programmes</a></li>
       <li><a href="#">Convocation</a></li>
@@ -69,22 +67,26 @@
     </ul>
   </li>
   <li class="dropdown">
-    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Administration
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Admission
     <span class="caret"></span></a>
     <ul class="dropdown-menu">
 
-      <li><a href="#">Page 1-1</a></li>
-      <li><a href="#">Page 1-2</a></li>
-      <li><a href="#">Page 1-3</a></li>
+      <li><a href="#">Undergraduate</a></li>
+      <li><a href="#">Postgraduate</a></li>
+      <li><a href="#">PhD</a></li>
+      <li><a href="#">Fees</a></li>
+      <li><a href="#">Financial Assistance</a></li>
+      <li><a href="#">FAQ</a></li>
     </ul>
   </li>
   <li class="dropdown">
     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Research
     <span class="caret"></span></a>
     <ul class="dropdown-menu">
-      <li><a href="#">Page 1-1</a></li>
-      <li><a href="#">Page 1-2</a></li>
-      <li><a href="#">Page 1-3</a></li>
+      <li><a href="#">Publications</a></li>
+      <li><a href="#">Research Areas</a></li>
+      <li><a href="#">Events</a></li>
+      <li><a href="#">Fellowship Awards</a></li>
     </ul>
   </li>
 
@@ -92,18 +94,23 @@
     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Placement and outreach
     <span class="caret"></span></a>
     <ul class="dropdown-menu">
-      <li><a href="#">Page 1-1</a></li>
-      <li><a href="#">Page 1-2</a></li>
-      <li><a href="#">Page 1-3</a></li>
+      <li><a href="#">Messages</a></li>
+      <li><a href="#">Why recruit @ IIITN?</a></li>
+      <li><a href="#">Placement Procedure</a></li>
+      <li><a href="#">Statistics</a></li>
+      <li><a href="#">Internships</a></li>
+      <li><a href="#">Our Recruiters</a></li>
+      <li><a href="#">Our Startups</a></li>
+      <li><a href="#">Our Alumni</a></li>
+      <li><a href="#">Contact TNP</a></li>
     </ul>
   </li>
   <li class="dropdown">
     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Careers
     <span class="caret"></span></a>
     <ul class="dropdown-menu">
-      <li><a href="#">Page 1-1</a></li>
-      <li><a href="#">Page 1-2</a></li>
-      <li><a href="#">Page 1-3</a></li>
+      <li><a href="#">Faculty Recruitment</a></li>
+      <li><a href="#">Staff Recruitment</a></li>
     </ul>
   </li>
   <li class="dropdown">
@@ -119,9 +126,11 @@
     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Student affairs
     <span class="caret"></span></a>
     <ul class="dropdown-menu">
-      <li><a href="#">Page 1-1</a></li>
-      <li><a href="#">Page 1-2</a></li>
-      <li><a href="#">Page 1-3</a></li>
+      <li><a href="#">Events and News</a></li>
+      <li><a href="#">Facilities</a></li>
+      <li><a href="#">Hostels</a></li>
+      <li><a href="#">Student Clubs</a></li>
+      <li><a href="#">Discipline Grievance</a></li>
     </ul>
   </li>
 </ul>
@@ -133,5 +142,5 @@
 {% endblock %}
 
 {% block footer %}
-  
+
 {% endblock %}

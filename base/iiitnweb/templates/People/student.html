@@ -2,17 +2,15 @@
 
 {% block content %}
 
-{% for i in facdata%}
+{% for i in studata%}
     <h1> {{i.name}}</h1>
     <br>
-    <p>{{i.post}}</p>
+    <p>{{i.branch}}</p>
     <br>
-    <p>{{i.about_fac}}</p>
+    <p>{{i.program}}</p>
     <br>
-    <p>{{i.email}}</p>
-    <br>
-    <p>{{i.phone}}</p>
-    <br>
+    <p>{{i.rollno}}</p>
+
 {% endfor%}
 
 {% include 'footer.html' %}
