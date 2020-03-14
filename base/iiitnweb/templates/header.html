@@ -73,12 +73,12 @@
     <span class="caret"></span></a>
     <ul class="dropdown-menu">
 
-      <li><a href="#">Undergraduate</a></li>
-      <li><a href="#">Postgraduate</a></li>
-      <li><a href="#">PhD</a></li>
+      <li><a href="{% url 'undergraduate' %}">Undergraduate</a></li>
+      <li><a href="{% url 'postgraduate' %}">Postgraduate</a></li>
+      <li><a href="{% url 'phd' %}">PhD</a></li>
       <li><a href="#">Fees</a></li>
       <li><a href="#">Financial Assistance</a></li>
-      <li><a href="#">FAQ</a></li>
+      <li><a href="{% url 'question' %}">FAQ</a></li>
     </ul>
   </li>
   <li class="dropdown">
