@@ -66,7 +66,7 @@ class Admission(TemplateView):
 		return render(request, 'Admission/phd.html')
 
 	def Fees(request):
-		return render(request, 'Admission/fess.html')
+		return render(request, 'Admission/fees.html')
 
 	def FinancialAssistance(request):
 		return render(request, 'Admission/financial.html')
