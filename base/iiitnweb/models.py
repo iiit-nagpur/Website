@@ -30,6 +30,10 @@ class Staff(models.Model):
 	email=models.EmailField(max_length=40)
 	phone=models.CharField(max_length=15)
 
+class Faq(models.Model):
+	question = models.TextField()
+	answer = models.TextField()
+
 class Student(models.Model):
 	name=models.CharField(max_length=40)
 	branch=models.CharField(max_length=40)
