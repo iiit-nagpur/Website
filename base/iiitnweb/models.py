@@ -29,3 +29,10 @@ class Staff(models.Model):
 	about_fac=models.TextField()
 	email=models.EmailField(max_length=40)
 	phone=models.CharField(max_length=15)
+
+class Student(models.Model):
+	name=models.CharField(max_length=40)
+	branch=models.CharField(max_length=40)
+	program=models.CharField(max_length=40)
+	rollno=models.CharField(max_length=10)
+	status=models.BooleanField(help_text = "Check if passed out")

@@ -87,14 +87,9 @@ class People(TemplateView):
 		object=Staff.objects.all()
 		return render(request, 'People/staff.html',{'staffdata':object})
 
-	def Btech(request):
-		return render(request, 'People/btech.html')
-
-	def Mtech(request):
-		return render(request, 'People/mtech.html')
-
-	def Phd(request):
-		return render(request, 'People/phd.html')
+	def Student(request):
+		object=Student.objects.all()
+		return render(request, 'People/student.html', {'studata':object})
 
 	def Alumni(request):
 		return render(request, 'People/alumni.html')

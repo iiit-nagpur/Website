@@ -1,0 +1,17 @@
+{% extends 'header.html' %}
+
+{% block content %}
+
+{% for i in studata%}
+    <h1> {{i.name}}</h1>
+    <br>
+    <p>{{i.branch}}</p>
+    <br>
+    <p>{{i.program}}</p>
+    <br>
+    <p>{{i.rollno}}</p>
+
+{% endfor%}
+
+{% include 'footer.html' %}
+{% endblock %}
