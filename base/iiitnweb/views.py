@@ -69,10 +69,11 @@ class Admission(TemplateView):
 		return render(request, 'Admission/fees.html')
 
 	def FinancialAssistance(request):
-		return render(request, 'Admission/financial.html')
+		return render(request, 'Admission/financialassist.html')
 
 	def Questions(request):
-		return render(request, 'Admission/questions.html')
+		obj = Faq.objects.all()
+		return render(request, 'Admission/questions.html', {'faq': obj})
 
 class People(TemplateView):
 	def Faculty(request):

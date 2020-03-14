@@ -8,4 +8,6 @@ admin.site.register(About)
 admin.site.register(Faculty)
 admin.site.register(Adjunctfac)
 admin.site.register(Staff)
+admin.site.register(Faq)
+
 # Register your models here.

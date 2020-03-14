@@ -29,3 +29,7 @@ class Staff(models.Model):
 	about_fac=models.TextField()
 	email=models.EmailField(max_length=40)
 	phone=models.CharField(max_length=15)
+
+class Faq(models.Model):
+	question = models.TextField()
+	answer = models.TextField()
