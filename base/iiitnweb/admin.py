@@ -9,5 +9,5 @@ admin.site.register(Faculty)
 admin.site.register(Adjunctfac)
 admin.site.register(Staff)
 admin.site.register(Faq)
-
+admin.site.register(Student)
 # Register your models here.

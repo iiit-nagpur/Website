@@ -33,3 +33,10 @@ class Staff(models.Model):
 class Faq(models.Model):
 	question = models.TextField()
 	answer = models.TextField()
+
+class Student(models.Model):
+	name=models.CharField(max_length=40)
+	branch=models.CharField(max_length=40)
+	program=models.CharField(max_length=40)
+	rollno=models.CharField(max_length=10)
+	status=models.BooleanField(help_text = "Check if passed out")
