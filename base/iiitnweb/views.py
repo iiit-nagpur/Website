@@ -115,48 +115,48 @@ class Academics(TemplateView):
 
 class Research(TemplateView):
 	def Publications(request):
-		return render(request, 'publications.html')
+		return render(request, 'Research/publications.html')
 
 	def ResearchAreas(request):
-		return render(request, 'research.html')
+		return render(request, 'Research/research.html')
 
 	def Events(request):
-		return render(request, 'events.html')
+		return render(request, 'Research/events.html')
 
 	def FellowshipAwards(request):
-		return render(request, 'awards.html')
+		return render(request, 'Research/awards.html')
 
 class Placement(TemplateView):
 	def Message(request):
-		return render(request, 'message.html')
+		return render(request, 'Placement/message.html')
 
 	def WhyRecruit(request):
-		return render(request, 'whyrecruit.html')
+		return render(request, 'Placement/whyrecruit.html')
 
 	def Procedure(request):
-		return render(request, 'procedure.html')
+		return render(request, 'Placement/procedure.html')
 
 	def Statistics(request):
-		return render(request, 'statistics.html')
+		return render(request, 'Placement/statistics.html')
 
 	def Internships(request):
-		return render(request, 'internships.html')
+		return render(request, 'Placement/internships.html')
 
 	def Recruiters(request):
-		return render(request, 'recruiters.html')
+		return render(request, 'Placement/recruiters.html')
 
 	def Startups(request):
-		return render(request, 'startups.html')
+		return render(request, 'Placement/startups.html')
 
 	def ContactTnP(request):
-		return render(request, 'contacttnp.html')
+		return render(request, 'Placement/contacttnp.html')
 
 class Careers(TemplateView):
 	def FacultyRecruitment(request):
-		return render(request, 'facrecruit.html')
+		return render(request, 'Careers/facrecruit.html')
 
 	def StaffRecruitment(request):
-		return render(request, 'staffrecruit.html')
+		return render(request, 'Careers/staffrecruit.html')
 
 class StudentAffairs(TemplateView):
 	def EventsNews(request):

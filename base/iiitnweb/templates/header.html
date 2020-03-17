@@ -83,10 +83,10 @@
     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Research
     <span class="caret"></span></a>
     <ul class="dropdown-menu">
-      <li><a href="#">Publications</a></li>
-      <li><a href="#">Research Areas</a></li>
-      <li><a href="#">Events</a></li>
-      <li><a href="#">Fellowship Awards</a></li>
+      <li><a href="{% url 'publications' %}">Publications</a></li>
+      <li><a href="{% url 'researchareas' %}">Research Areas</a></li>
+      <li><a href="{% url 'events' %}">Events</a></li>
+      <li><a href="{% url 'awards' %}">Fellowship Awards</a></li>
     </ul>
   </li>
 
@@ -94,23 +94,22 @@
     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Placement and outreach
     <span class="caret"></span></a>
     <ul class="dropdown-menu">
-      <li><a href="#">Messages</a></li>
-      <li><a href="#">Why recruit @ IIITN?</a></li>
-      <li><a href="#">Placement Procedure</a></li>
-      <li><a href="#">Statistics</a></li>
-      <li><a href="#">Internships</a></li>
-      <li><a href="#">Our Recruiters</a></li>
-      <li><a href="#">Our Startups</a></li>
-      <li><a href="#">Our Alumni</a></li>
-      <li><a href="#">Contact TNP</a></li>
+      <li><a href="{% url 'message' %}">Messages</a></li>
+      <li><a href="{% url 'whyrecruit' %}">Why recruit @ IIITN?</a></li>
+      <li><a href="{% url 'procedure' %}">Placement Procedure</a></li>
+      <li><a href="{% url 'statistics' %}">Statistics</a></li>
+      <li><a href="{% url 'internships' %}">Internships</a></li>
+      <li><a href="{% url 'recruiters' %}">Our Recruiters</a></li>
+      <li><a href="{% url 'startups' %}">Our Startups</a></li>
+      <li><a href="{% url 'contactTnp' %}">Contact TNP</a></li>
     </ul>
   </li>
   <li class="dropdown">
     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Careers
     <span class="caret"></span></a>
     <ul class="dropdown-menu">
-      <li><a href="#">Faculty Recruitment</a></li>
-      <li><a href="#">Staff Recruitment</a></li>
+      <li><a href="{% url 'facrecruit' %}">Faculty Recruitment</a></li>
+      <li><a href="{% url 'staffrecruit' %}">Staff Recruitment</a></li>
     </ul>
   </li>
   <li class="dropdown">
