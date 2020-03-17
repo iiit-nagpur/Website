@@ -14,11 +14,7 @@ from .models import *
 
 '''
 To do
-Add People/Community
-Add Placement & Outreach
-Add Student Affairs
-Check Contact Section
-Verify each function
+Add Contact class
 '''
 
 
@@ -28,16 +24,9 @@ def home(request):
 def contact(request):
 	return render(request, 'contacts.html')
 
-# def Abouts(request):
-# 	obj=About.objects.get(id=1)
-# 	context={
-# 		'laud': obj.head,
-# 		'pol': obj.content
-# 	}
-# 	return render(request, 'about.html', context)
-
 class Home(TemplateView):
 	def Abouts(request):
+		#This page gives error if there are no objects of this model
 		obj=About.objects.get(id=1)
 		context={
 			'title': obj.head,
@@ -173,29 +162,3 @@ class StudentAffairs(TemplateView):
 
 	def DisciplineGrievance(request):
 		return render(request, 'Student Affairs/grievance.html')
-
-
-
-
-
-
-
-	# def get_context_data(*args, **kwargs):
-	# 	context = super(Admissions,self).get_context_data(*args,**kwargs)
-	# 	context['user_active']=False
-	# 	if self.request.user.is_active:
-	# 		context['user_active']=True
-	# 		context['user']=self.request.user
-
-	# 	context['title']=strings['admissions_title']
-	# 	context['base'] = templates['base']['root']
-	# 	context['mast'] = templates['build']['mast']
-	# 	context['MAST_TEXT']="Admissions"
-	# 	context['admissions_undergraduate'] = templates['site']['admissions']['undergraduate']
-	# 	context['admissions_postgraduate'] = templates['site']['admissions']['postgraduate']
-	# 	context['fee_structure'] = AdmissionsFeeStructure.objects.all()[0]
-	# 	context['financial_assistance'] = AdmissionsFinancialAssistance.objects.order_by('order_no')
-	# 	context['policy'] = Notes.objects.get(title='POLICY')
-	# 	context['fee_mode_of_payment'] = AdmissionsFeeModeofPayment.objects.all()
-	# 	context['fee_mode_of_payment_notes'] = Notes.objects.get(title='FEE')
-	# 	return context
