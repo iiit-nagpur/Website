@@ -59,11 +59,11 @@
     <span class="caret"></span></a>
     <ul class="dropdown-menu">
       <li><a href={% static "assets/rulebook.pdf" %} target="_blank">Rulebook</a></li>
-      <li><a href="#">Departments</a></li>
-      <li><a href="#">Programmes</a></li>
-      <li><a href="#">Convocation</a></li>
-      <li><a href="#">Resources</a></li>
-      <li><a href="#">Student Verification</a></li>
+      <li><a href="{% url 'departments' %}">Departments</a></li>
+      <li><a href="{% url 'program' %}">Programmes</a></li>
+      <li><a href="{% url 'convocation' %}">Convocation</a></li>
+      <li><a href="{% url 'resources' %}">Resources</a></li>
+      <li><a href="{% url 'verification' %}">Student Verification</a></li>
     </ul>
   </li>
   <li class="dropdown">
@@ -125,11 +125,11 @@
     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Student affairs
     <span class="caret"></span></a>
     <ul class="dropdown-menu">
-      <li><a href="#">Events and News</a></li>
-      <li><a href="#">Facilities</a></li>
-      <li><a href="#">Hostels</a></li>
-      <li><a href="#">Student Clubs</a></li>
-      <li><a href="#">Discipline Grievance</a></li>
+      <li><a href="{% url 'eventnews' %}">Events and News</a></li>
+      <li><a href="{% url 'facilities' %}">Facilities</a></li>
+      <li><a href="{% url 'hostels' %}">Hostels</a></li>
+      <li><a href="{% url 'studentclubs' %}">Student Clubs</a></li>
+      <li><a href="{% url 'grievance' %}">Discipline Grievance</a></li>
     </ul>
   </li>
 </ul>
