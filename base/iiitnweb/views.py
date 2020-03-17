@@ -160,19 +160,19 @@ class Careers(TemplateView):
 
 class StudentAffairs(TemplateView):
 	def EventsNews(request):
-		return render(request, 'events.html')
+		return render(request, 'Student Affairs/events.html')
 
 	def Facilities(request):
-		return render(request, 'facilities.html')
+		return render(request, 'Student Affairs/facilities.html')
 
 	def Hostels(request):
-		return render(request, 'hostels.html')
+		return render(request, 'Student Affairs/hostels.html')
 
 	def StudentClubs(request):
-		return render(request, 'studentclubs.html')
+		return render(request, 'Student Affairs/studentclubs.html')
 
 	def DisciplineGrievance(request):
-		return render(request, 'grievance.html')
+		return render(request, 'Student Affairs/grievance.html')
 
 
 
