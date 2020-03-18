@@ -53,4 +53,7 @@ class departments(models.Model):
 	prof_image=models.ImageField(upload_to='static/images/')
 	prof_degree=models.CharField(max_length=50)
 	prof_interest=models.CharField(max_length=50)
-	
+
+class programmes(models.Model):
+	program_name=models.CharField(max_length=50)
+	about_program=models.TextField()
