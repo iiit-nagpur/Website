@@ -11,4 +11,4 @@ admin.site.register(Adjunctfac)
 admin.site.register(Staff)
 admin.site.register(Faq)
 admin.site.register(Student)
-
+admin.site.register(alumni)

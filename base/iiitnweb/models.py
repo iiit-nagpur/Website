@@ -40,3 +40,9 @@ class Student(models.Model):
 	program=models.CharField(max_length=40)
 	rollno=models.CharField(max_length=10)
 	status=models.BooleanField(help_text = "Check if passed out")
+
+class alumni(models.Model):
+	name=models.CharField(max_length=40)
+	branch=models.CharField(max_length=40)
+	about=models.TextField()
+	email=models.EmailField(max_length=40)

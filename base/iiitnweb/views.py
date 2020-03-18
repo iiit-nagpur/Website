@@ -82,7 +82,7 @@ class People(TemplateView):
 		return render(request, 'People/student.html', {'studata':object})
 
 	def Alumni(request):
-		object=Student.objects.all()
+		object=alumni.objects.all()
 		return render(request, 'People/alumni.html', {'alumnidata':object})
 
 class Academics(TemplateView):
