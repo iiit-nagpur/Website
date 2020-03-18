@@ -57,3 +57,7 @@ class departments(models.Model):
 class programmes(models.Model):
 	program_name=models.CharField(max_length=50)
 	about_program=models.TextField()
+
+class convocation(models.Model):
+	year=models.IntegerField()
+	about=models.TextField()
