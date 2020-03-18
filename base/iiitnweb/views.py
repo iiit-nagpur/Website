@@ -92,7 +92,8 @@ class Academics(TemplateView):
 		return render(request, 'Academics/departments.html',{'depdata':object})
 
 	def Programmes(request):
-		return render(request, 'Academics/programs.html')
+		object=programmes.objects.all()
+		return render(request, 'Academics/programmes.html',{'prodata':object})
 
 	def Convocation(request):
 		return render(request, 'Academics/convocation.html')
