@@ -46,3 +46,11 @@ class alumni(models.Model):
 	branch=models.CharField(max_length=40)
 	about=models.TextField()
 	email=models.EmailField(max_length=40)
+
+class departments(models.Model):
+	dep_name=models.CharField(max_length=50)
+	prof_name=models.CharField(max_length=50)
+	prof_image=models.ImageField(upload_to='static/images/')
+	prof_degree=models.CharField(max_length=50)
+	prof_interest=models.CharField(max_length=50)
+	

@@ -88,7 +88,8 @@ class People(TemplateView):
 class Academics(TemplateView):
 
 	def Departments(request):
-		return render(request, 'Academics/departments.html')
+		object=departments.objects.all()
+		return render(request, 'Academics/departments.html',{'depdata':object})
 
 	def Programmes(request):
 		return render(request, 'Academics/programs.html')
