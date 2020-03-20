@@ -1,4 +1,4 @@
-# IIIT Nagpur
+# Indian Institute of Information Technology, Nagpur
 ### Official upcoming website
 
 
