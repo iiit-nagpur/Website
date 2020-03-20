@@ -1,5 +1,5 @@
 # Indian Institute of Information Technology, Nagpur
-### Official upcoming website
+### Upcoming website
 
 
 ### Technologies used:
@@ -9,8 +9,8 @@
 
 
 ### Contributors:
-  - Parth Wazurkar
-  - Saurabh Yadav
-  - Arun Das
-  - Sarthak Shukla
-  - Aman Kumar
+  - Parth Wazurkar (@parthw1)
+  - Saurabh Yadav (@saurabhshadow)
+  - Arun Das (@qazz625)
+  - Sarthak Shukla (@sarthakeddy)
+  - Aman Kumar (@alpha74)
