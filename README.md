@@ -9,8 +9,8 @@
 
 
 ### Contributors:
-  - Parth Wazurkar (@parthw1)
-  - Saurabh Yadav (@saurabhshadow)
-  - Arun Das (@qazz625)
-  - Sarthak Shukla (@sarthakeddy)
-  - Aman Kumar (@alpha74)
+  - [Parth Wazurkar](https://github.com/parthw1)
+  - [Saurabh Yadav](https://github.com/saurabhshadow)
+  - [Arun Das](https://github.com/qazz625)
+  - [Sarthak Shukla](https://github.com/sarthakeddy)
+  - [Aman Kumar](https://github.com/alpha74)
