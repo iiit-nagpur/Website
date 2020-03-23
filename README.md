@@ -1,6 +1,12 @@
 # Indian Institute of Information Technology, Nagpur
 ### Upcoming website
 
+## How to use?
+- `git clone git@github.com:iiit-nagpur/Website.git`
+- `cd Website/`
+- `cd base/`
+- Install requirements :- `pip3 install -r requirements.txt`
+- Run server `python3 manage.py runserver`
 
 ### Technologies used:
   - Django 
